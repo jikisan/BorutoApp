@@ -5,7 +5,7 @@ import com.example.models.Hero
 
 const val NEXT_PAGE_KEY = "nextPage"
 const val PREV_PAGE_KEY = "prevPage"
-public class HereRepositoryImpl: HeroRepository {
+class HereRepositoryImpl: HeroRepository {
 
     override val heroes: Map<Int, List<Hero>> by lazy {
         mapOf(
@@ -16,6 +16,7 @@ public class HereRepositoryImpl: HeroRepository {
             5 to page5
         )
     }
+
     override val page1 = listOf(
         Hero(
             id = 1,

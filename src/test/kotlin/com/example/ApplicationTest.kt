@@ -59,7 +59,7 @@ class ApplicationTest {
 
     @Test
     fun `'access all heroes endpoint, query hero, assert single hero result'`() = testApplication {
-        val response = client.get("/boruto/heroes/search?name=sasuke")
+        val response = client.get(" ?name=sasuke")
 
         assertEquals(HttpStatusCode.OK, response.status)
 

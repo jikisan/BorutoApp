@@ -1,6 +1,7 @@
 package com.example.plugins
 
 import com.example.routes.getAllHeroes
+import com.example.routes.getAllHeroesAlternative
 import com.example.routes.root
 import com.example.routes.searchHeroes
 import io.ktor.server.application.*
@@ -12,7 +13,8 @@ import javax.naming.AuthenticationException
 fun Application.configureRouting() {
     routing {
         root()
-        getAllHeroes()
+        getAllHeroesAlternative()
+//        getAllHeroes()
         searchHeroes()
 
 //        get("/test2"){

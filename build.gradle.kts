@@ -31,10 +31,13 @@ dependencies {
     implementation("io.ktor:ktor-server-call-logging-jvm")
     implementation("io.ktor:ktor-server-netty-jvm")
     implementation("io.ktor:ktor-server-default-headers:$ktorVersion")
+    implementation("io.ktor:ktor-server-status-pages:$ktorVersion")
 
     implementation("ch.qos.logback:logback-classic:$logbackVersion")
     testImplementation("io.ktor:ktor-server-tests-jvm")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion")
+    testImplementation("io.ktor:ktor-server-test-host:$kotlinVersion")
+    testImplementation("org.jetbrains.kotlin:kotlin-test:$kotlinVersion")
 
     // Koin for Ktor
     implementation("io.insert-koin:koin-ktor:$koinKtor-wasm-alpha2")

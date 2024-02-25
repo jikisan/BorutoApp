@@ -13,8 +13,8 @@ import javax.naming.AuthenticationException
 fun Application.configureRouting() {
     routing {
         root()
-        getAllHeroesAlternative()
-//        getAllHeroes()
+//        getAllHeroesAlternative()
+        getAllHeroes()
         searchHeroes()
 
 //        get("/test2"){
@@ -22,6 +22,10 @@ fun Application.configureRouting() {
 //
 //        }
 
-        staticResources("/images", "images")
+//        staticResources("/images", "images")
+
+        static("/images") {
+            resources("images")
+        }
     }
 }

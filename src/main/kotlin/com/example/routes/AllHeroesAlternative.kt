@@ -15,7 +15,7 @@ fun Route.getAllHeroesAlternative(){
     get("/boruto/heroes"){
         try {
             val page = call.request.queryParameters["page"]?.toInt() ?: 1
-            val limit = call.request.queryParameters["limit"]?.toInt() ?: 4
+            val limit = call.request.queryParameters["limit"]?.toInt() ?: 3
 
             val apiResponse = heroRepositoryAlternative.getAllHerores(
                 page = page,
